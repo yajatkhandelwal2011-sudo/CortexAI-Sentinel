@@ -331,6 +331,38 @@ st.markdown("""
 <p>Real-time survival intelligence for disasters, emergencies and offline rescue coordination.</p>
 </div>
 """, unsafe_allow_html=True)
+st.markdown("""
+<div style="
+background: linear-gradient(135deg, rgba(16,185,129,0.18), rgba(59,130,246,0.18));
+border: 1px solid rgba(34,197,94,0.35);
+padding: 16px;
+border-radius: 18px;
+margin-top: 12px;
+margin-bottom: 20px;
+text-align:center;
+backdrop-filter: blur(12px);
+box-shadow: 0 0 20px rgba(34,197,94,0.15);
+">
+
+<h3 style="
+color:#4ADE80;
+font-size:22px;
+font-weight:800;
+margin:0;
+">
+🟢 Gemma 2B AI Engine Running Locally
+</h3>
+
+<p style="
+color:#D1FAE5;
+font-size:15px;
+margin-top:8px;
+">
+Hybrid Offline Emergency Intelligence Active via Ollama
+</p>
+
+</div>
+""", unsafe_allow_html=True)
 
 
 # -----------------------------------
