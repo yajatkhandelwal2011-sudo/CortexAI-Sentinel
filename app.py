@@ -334,34 +334,47 @@ st.markdown("""
 st.markdown("""
 <div style="
 background: linear-gradient(135deg, rgba(16,185,129,0.18), rgba(59,130,246,0.18));
-border: 1px solid rgba(34,197,94,0.35);
-padding: 16px;
-border-radius: 18px;
-margin-top: 12px;
-margin-bottom: 20px;
+border: 1px solid rgba(74,222,128,0.35);
+padding: 18px;
+border-radius: 20px;
+margin-top: 14px;
+margin-bottom: 22px;
 text-align:center;
-backdrop-filter: blur(12px);
-box-shadow: 0 0 20px rgba(34,197,94,0.15);
+backdrop-filter: blur(14px);
+box-shadow:
+0 0 25px rgba(74,222,128,0.18),
+0 0 45px rgba(59,130,246,0.12);
+animation: pulseGlow 2s infinite;
 ">
 
-<h3 style="
+<h2 style="
 color:#4ADE80;
-font-size:22px;
-font-weight:800;
+font-size:24px;
+font-weight:900;
 margin:0;
+letter-spacing:0.5px;
 ">
-🟢 Gemma 2B AI Engine Running Locally
-</h3>
+🟢 OLLAMA + GEMMA 2B ONLINE
+</h2>
 
 <p style="
 color:#D1FAE5;
-font-size:15px;
-margin-top:8px;
+font-size:16px;
+margin-top:10px;
+font-weight:600;
 ">
-Hybrid Offline Emergency Intelligence Active via Ollama
+Local Offline Emergency Intelligence Engine Running Successfully
 </p>
 
 </div>
+
+<style>
+@keyframes pulseGlow {
+0% { transform: scale(1); opacity: 0.95; }
+50% { transform: scale(1.01); opacity: 1; }
+100% { transform: scale(1); opacity: 0.95; }
+}
+</style>
 """, unsafe_allow_html=True)
 
 
