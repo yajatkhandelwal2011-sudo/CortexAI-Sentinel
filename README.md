@@ -2,8 +2,6 @@
 
 ## Hybrid AI-Powered Disaster Intelligence & Emergency Response Infrastructure
 
-![Main Dashboard](screenshots/dashboard.png)
-
 ---
 
 # Overview
@@ -28,7 +26,6 @@ inside a futuristic emergency-response dashboard.
 
 # Main Dashboard
 
-![Dashboard](screenshots/dashboard.png)
 
 The main command-center dashboard displays:
 - offline AI infrastructure
@@ -41,7 +38,6 @@ The main command-center dashboard displays:
 
 # Live Weather Intelligence
 
-![Weather Alert](screenshots/weather.png)
 
 The weather intelligence module provides:
 - live weather monitoring
@@ -53,7 +49,6 @@ The weather intelligence module provides:
 
 # Disaster Mode Selector
 
-![Disaster Mode](screenshots/disastermode.png)
 
 The adaptive disaster mode selector changes AI reasoning behavior depending on:
 - Fire Emergency
@@ -66,7 +61,6 @@ The adaptive disaster mode selector changes AI reasoning behavior depending on:
 
 # Emergency AI Query System
 
-![Emergency Query](screenshots/query.png)
 
 Users can ask emergency-related questions such as:
 - evacuation guidance
@@ -80,7 +74,6 @@ The AI generates survival recommendations and emergency instructions.
 
 # Voice Intelligence
 
-![Voice System](screenshots/voice.png)
 
 The system supports:
 - voice input
@@ -95,7 +88,6 @@ using:
 
 # National Emergency Status
 
-![Emergency Status](screenshots/status.png)
 
 The National Emergency Status system continuously monitors:
 - disaster conditions
@@ -107,7 +99,6 @@ The National Emergency Status system continuously monitors:
 
 # GPS Navigation & Disaster Heatmap
 
-![Heatmap](screenshots/heatmap.png)
 
 The mapping system provides:
 - GPS navigation
@@ -124,7 +115,6 @@ Built using:
 
 # Nearby Safe Zones
 
-![Safe Zones](screenshots/safezones.png)
 
 The platform automatically identifies:
 - emergency shelters
@@ -136,7 +126,6 @@ The platform automatically identifies:
 
 # SOS Rescue Mesh System
 
-![SOS System](screenshots/sos.png)
 
 The Rescue Mesh infrastructure enables:
 - SOS broadcasting
@@ -148,7 +137,6 @@ The Rescue Mesh infrastructure enables:
 
 # AI Disaster Image Analysis
 
-![Image Analysis](screenshots/imageanalysis.png)
 
 The Vision AI module analyzes:
 - disaster-related images
@@ -160,7 +148,6 @@ The Vision AI module analyzes:
 
 # Rescue Priority Analytics
 
-![Analytics](screenshots/analytics.png)
 
 The Rescue Priority Analytics engine calculates:
 - survivor risk scores
