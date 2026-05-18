@@ -231,9 +231,8 @@ CortexAI/
 ├── memory.py
 ├── requirements.txt
 ├── README.md
-│
-├── screenshots/
-└── offline_maps/
+|
+├── offline_maps/
 ```
 
 ---
