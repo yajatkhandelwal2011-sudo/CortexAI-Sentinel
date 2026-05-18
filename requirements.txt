@@ -2,12 +2,7 @@ streamlit
 folium
 streamlit-folium
 streamlit-geolocation
-audiorecorder
-SpeechRecognition
-pyttsx3
 requests
 pillow
-ollama
-transformers
-torch
-torchvision
+SpeechRecognition
+streamlit-audiorecorder
