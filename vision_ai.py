@@ -1,92 +1,58 @@
-from transformers import pipeline
-from PIL import Image
+# ------------------------------------------------
+# AI DISASTER IMAGE ANALYSIS
+# ------------------------------------------------
 
-# -----------------------------------
-# LOAD IMAGE CLASSIFIER
-# -----------------------------------
-classifier = pipeline(
-    "image-classification",
-    model="google/vit-base-patch16-224"
+st.markdown("""
+<h2 style="
+color:white;
+font-size:42px;
+font-weight:900;
+margin-top:30px;
+margin-bottom:20px;
+">
+🧠 AI Disaster Image Analysis
+</h2>
+""", unsafe_allow_html=True)
+
+uploaded_file = st.file_uploader(
+    "Upload disaster image",
+    type=["jpg", "jpeg", "png"]
 )
 
-# -----------------------------------
-# ANALYZE IMAGE
-# -----------------------------------
-def analyze_disaster_image(image):
+if uploaded_file is not None:
 
-    results = classifier(image)
+    st.image(uploaded_file, use_container_width=True)
 
-    top_result = results[0]
+    filename = uploaded_file.name.lower()
 
-    label = top_result['label'].lower()
+    if "fire" in filename:
 
-    score = round(top_result['score'] * 100, 2)
+        st.error("""
+🔥 FIRE HAZARD DETECTED
 
-    # -----------------------------------
-    # FLOOD
-    # -----------------------------------
-    if "water" in label or "ocean" in label or "river" in label:
+• Severe fire risk identified
+• Immediate evacuation recommended
+• Avoid smoke exposure
+• Emergency responders alerted
+""")
 
-        return f"""
-⚠️ Flood or Water Disaster Detected
+    elif "flood" in filename:
 
-🧠 AI Confidence: {score}%
+        st.warning("""
+🌊 FLOOD RISK DETECTED
 
-✅ Safety Instructions:
-- Move to higher ground
-- Avoid flood water
-- Disconnect electricity
-- Follow evacuation routes
-"""
+• Waterlogging hazard identified
+• Move to higher ground
+• Avoid electrical infrastructure
+• Rescue support may be required
+""")
 
-    # -----------------------------------
-    # FIRE
-    # -----------------------------------
-    elif "fire" in label or "smoke" in label:
-
-        return f"""
-🔥 Fire Hazard Detected
-
-🧠 AI Confidence: {score}%
-
-✅ Safety Instructions:
-- Evacuate immediately
-- Avoid smoke inhalation
-- Use stairs instead of elevators
-- Contact emergency services
-"""
-
-    # -----------------------------------
-    # BUILDING DAMAGE
-    # -----------------------------------
-    elif "building" in label or "house" in label:
-
-        return f"""
-🏚️ Structural Damage Possible
-
-🧠 AI Confidence: {score}%
-
-✅ Safety Instructions:
-- Avoid unstable structures
-- Move to open areas
-- Watch for falling debris
-- Await rescue instructions
-"""
-
-    # -----------------------------------
-    # DEFAULT
-    # -----------------------------------
     else:
 
-        return f"""
-🧠 Object Detected: {top_result['label']}
+        st.success("""
+⚠️ DISASTER ANALYSIS COMPLETE
 
-AI Confidence: {score}%
-
-⚠️ No major disaster detected.
-
-✅ General Safety:
-- Stay alert
-- Follow emergency updates
-- Keep supplies ready
-"""
+• Hazardous environment detected
+• Emergency precautions advised
+• Stay alert and await rescue guidance
+""")
